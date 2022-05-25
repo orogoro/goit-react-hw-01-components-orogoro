@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-01-components-orogoro/static/css/main.befdbb68.css",
-    "main.js": "/goit-react-hw-01-components-orogoro/static/js/main.589f1519.js",
+    "main.css": "/goit-react-hw-01-components-orogoro/static/css/main.e31931ec.css",
+    "main.js": "/goit-react-hw-01-components-orogoro/static/js/main.9244403e.js",
     "index.html": "/goit-react-hw-01-components-orogoro/index.html",
-    "main.befdbb68.css.map": "/goit-react-hw-01-components-orogoro/static/css/main.befdbb68.css.map",
-    "main.589f1519.js.map": "/goit-react-hw-01-components-orogoro/static/js/main.589f1519.js.map"
+    "main.e31931ec.css.map": "/goit-react-hw-01-components-orogoro/static/css/main.e31931ec.css.map",
+    "main.9244403e.js.map": "/goit-react-hw-01-components-orogoro/static/js/main.9244403e.js.map"
   },
   "entrypoints": [
-    "static/css/main.befdbb68.css",
-    "static/js/main.589f1519.js"
+    "static/css/main.e31931ec.css",
+    "static/js/main.9244403e.js"
   ]
 }
