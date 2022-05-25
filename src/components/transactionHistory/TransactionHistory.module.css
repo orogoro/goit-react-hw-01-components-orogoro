@@ -1,0 +1,22 @@
+.transaction_history{
+    width: 800px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.thead_style{
+    height: 60px;
+    font-size: 30px;
+    background-color: blue;
+}
+.tr_style {
+font-size: 30px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
