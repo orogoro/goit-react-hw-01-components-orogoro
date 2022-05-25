@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import getRandomHexColor from './getRandomHexColor';
+// import getRandomHexColor from './getRandomHexColor';
 
 export const Statistics = styled.section`
   margin-top: 100px;
@@ -34,5 +34,4 @@ export const Item = styled.li`
   padding: 5px;
   width: 100%;
   border: 1px solid #000;
-  background-color: ${getRandomHexColor()};
 `;
