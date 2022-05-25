@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import getRandomHexColor from './getRandomHexColor';
+import getRandomHexColor from './getRandomHexColor';
 
 export const Statistics = styled.section`
   margin-top: 100px;
@@ -18,7 +18,7 @@ export const Title = styled.h2`
   color: #666666;
 `;
 
-export const Stat_list = styled.ul`
+export const StatList = styled.ul`
   display: flex;
   justify-content: space-between;
 
@@ -34,4 +34,5 @@ export const Item = styled.li`
   padding: 5px;
   width: 100%;
   border: 1px solid #000;
+  background-color: ${getRandomHexColor()};
 `;
