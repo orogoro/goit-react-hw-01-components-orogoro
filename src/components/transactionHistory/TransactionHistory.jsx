@@ -1,33 +1,40 @@
 import PropTypes from 'prop-types';
 import Painting from './Painting';
-import styleTransaction from './TransactionHistory.module.css';
+
+import {
+  TransactionTable,
+  TheadStyle,
+  TrStyle,
+} from './TransactionHistory.styled';
 
 export default function TransactionHistory({ transactions }) {
   return (
-    <table className={styleTransaction.transaction_history}>
-      <thead className={styleTransaction.thead_style}>
+    <TransactionTable>
+      <TheadStyle>
         <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
-      </thead>
+      </TheadStyle>
 
       <tbody>
         {transactions.map(item => (
-          <tr className={styleTransaction.tr_style} key={item.id}>
+          <TrStyle key={item.id}>
             <Painting
               type={item.type}
               amount={item.amount}
               currency={item.currency}
             />
-          </tr>
+          </TrStyle>
         ))}
       </tbody>
-    </table>
+    </TransactionTable>
   );
 }
 
 TransactionHistory.protoTypes = {
   key: PropTypes.string,
 };
+
+// sdsad
