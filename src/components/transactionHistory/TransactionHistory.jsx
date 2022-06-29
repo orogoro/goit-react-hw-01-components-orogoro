@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Painting from './Painting';
+import TransactionHistoryItem from './TransactionHistoryItem';
 
 import {
   TransactionTable,
@@ -19,12 +19,12 @@ export default function TransactionHistory({ transactions }) {
       </TheadStyle>
 
       <tbody>
-        {transactions.map(item => (
-          <TrStyle key={item.id}>
-            <Painting
-              type={item.type}
-              amount={item.amount}
-              currency={item.currency}
+        {transactions.map(({ id, type, amount, currency }) => (
+          <TrStyle key={id}>
+            <TransactionHistoryItem
+              type={type}
+              amount={amount}
+              currency={currency}
             />
           </TrStyle>
         ))}
@@ -33,8 +33,10 @@ export default function TransactionHistory({ transactions }) {
   );
 }
 
-TransactionHistory.protoTypes = {
-  key: PropTypes.string,
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
-
-// sdsad

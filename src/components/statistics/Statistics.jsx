@@ -7,12 +7,12 @@ import { Statistics, Title } from './Statistics.styled';
 export default function Statistic({ title }) {
   return (
     <Statistics>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <PaintingList items={data} />
     </Statistics>
   );
 }
 
 Statistic.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };

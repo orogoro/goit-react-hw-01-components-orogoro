@@ -7,9 +7,9 @@ import { StatList, Item } from './Statistics.styled';
 export default function PaintingList({ items }) {
   return (
     <StatList>
-      {items.map(item => (
-        <Item key={item.id} style={{ backgroundColor: getRandomHexColor() }}>
-          <Painting label={item.label} percentage={item.percentage} />
+      {items.map(({ id, label, percentage }) => (
+        <Item key={id} style={{ backgroundColor: getRandomHexColor() }}>
+          <Painting label={label} percentage={percentage} />
         </Item>
       ))}
     </StatList>
@@ -17,5 +17,9 @@ export default function PaintingList({ items }) {
 }
 
 PaintingList.propTypes = {
-  key: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };

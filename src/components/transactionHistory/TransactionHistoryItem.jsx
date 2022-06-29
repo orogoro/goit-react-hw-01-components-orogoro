@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Painting({ type, amount, currency }) {
+export default function TransactionHistoryItem({ type, amount, currency }) {
   return (
     <>
       <td>{type}</td>
@@ -10,7 +10,7 @@ export default function Painting({ type, amount, currency }) {
   );
 }
 
-Painting.propTypes = {
+TransactionHistoryItem.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
